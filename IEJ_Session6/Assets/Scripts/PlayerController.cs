@@ -11,28 +11,48 @@ public class PlayerController : MonoBehaviour
     public Camera KameraMain;
     public Vector3 Kamera;
     public int launchForce;
+    public float timePressedKey;
+    public bool launchObject;
+    public int maxForceLancer;
+    public int CoeffPuissanceTemps;
+
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         orbs = GameObject.Find("Orbs");
-        launchForce = 800;
         KameraMain = Camera.main;
+        timePressedKey = 0;
+        launchObject = false;
+        maxForceLancer = 200;
+        CoeffPuissanceTemps = 15;
     }
 
     void Update()
     {
-        Kamera = KameraMain.transform.forward;
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKey(KeyCode.X))
+        {
+            launchObject = true;
+            timePressedKey += Time.deltaTime;
+            if(timePressedKey > maxForceLancer)
+            {
+                timePressedKey = 200;
+            }
+        }
+        else if (launchObject)
         {
             LaunchOrb();
+            timePressedKey = 0;
+            launchObject = false; 
         }
+        Kamera = KameraMain.transform.forward;
+       
     }
 
     void LaunchOrb()
     {
         GameObject myOrb;
         myOrb = Instantiate(orb, player.transform.position + player.transform.forward, Quaternion.identity, orbs.transform);
-        myOrb.GetComponent<Rigidbody>().AddForce(Kamera * launchForce);
+        myOrb.GetComponent<Rigidbody>().AddForce(Kamera * launchForce * timePressedKey* CoeffPuissanceTemps);
     }
 }

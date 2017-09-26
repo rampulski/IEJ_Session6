@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     void LaunchOrb()
     {
         GameObject myOrb;
-        myOrb = Instantiate(orb, player.transform.position + player.transform.forward, Quaternion.identity, orbs.transform);
+        myOrb = Instantiate(orb, player.transform.position + player.transform.forward + player.transform.right*2, Quaternion.identity, orbs.transform);
         myOrb.GetComponent<Rigidbody>().AddForce(Kamera * launchForce * timePressedKey* CoeffPuissanceTemps);
     }
 }

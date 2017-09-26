@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Orbs : MonoBehaviour {
 
+    public float timeBeforeDestruction;
 	void Start () {
 
-        Invoke("Destruction", 3f);
+        Invoke("Destruction", timeBeforeDestruction);
 	}
 	
 	void Update () {

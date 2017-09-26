@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-
     public GameObject orb;
     private GameObject player;
     private GameObject orbs;
 
-	void Start () {
+    public int launchForce;
+
+
+    void Start () {
 
         player = GameObject.FindGameObjectWithTag("Player");
         orbs = GameObject.Find("Orbs");
@@ -28,8 +30,8 @@ public class PlayerController : MonoBehaviour {
     void LaunchOrb()
     {
         GameObject myOrb;
-        myOrb = Instantiate(orb, player.transform.position, Quaternion.identity, orbs.transform);
-        myOrb.GetComponent<Rigidbody>().AddForce(player.transform.position + player.GetComponentInChildren<Transform>().transform.forward *500);
+        myOrb = Instantiate(orb, player.transform.position + player.transform.forward, Quaternion.identity, orbs.transform);
+        myOrb.GetComponent<Rigidbody>().AddForce(player.GetComponent<Transform>().forward * launchForce);
 
     }
 }

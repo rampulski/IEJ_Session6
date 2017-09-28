@@ -6,8 +6,13 @@ public class PlayerController : MonoBehaviour
 {
 
     public GameObject orb;
-    private GameObject player;
+	public GameObject orbHeavy;
+	public GameObject orbLite;
+	public GameObject orbBounce;
+	private GameObject orbInHand; //création du contenant des orbes.
+	private GameObject player;
     private GameObject orbs;
+	private Time GlobalDeltaTime;
     public Camera KameraMain;
     public Vector3 Kamera;
     public int launchForce;
@@ -15,10 +20,12 @@ public class PlayerController : MonoBehaviour
     public bool launchObject;
     public int maxForceLancer;
     public int CoeffPuissanceTemps;
+	new Vector3 ballista; 
 
 
     void Start()
     {
+		
         player = GameObject.FindGameObjectWithTag("Player");
         orbs = GameObject.Find("Orbs");
         KameraMain = Camera.main;
@@ -26,11 +33,49 @@ public class PlayerController : MonoBehaviour
         launchObject = false;
         maxForceLancer = 200;
         CoeffPuissanceTemps = 15;
+		orbInHand = orb; 
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.X))
+		if(Input.GetKey(KeyCode.Alpha1)){
+			if(orbInHand != orb){
+
+				orbInHand = orb;
+			} 
+
+
+		}
+		if(Input.GetKey(KeyCode.Alpha2)){
+			if(orbInHand != orbHeavy){
+
+				orbInHand = orbHeavy;
+
+			} 
+
+		}
+		if(Input.GetKey(KeyCode.Alpha3)){
+			if(orbInHand != orbLite){
+
+				orbInHand = orbLite;
+
+			} 
+
+		}
+
+		if(Input.GetKey(KeyCode.Alpha4)){
+			if(orbInHand != orbBounce){
+
+				orbInHand = orbBounce;
+
+			} 
+
+		}
+
+
+
+
+		if (Input.GetKey(KeyCode.RightShift))
         {
             launchObject = true;
             timePressedKey += Time.deltaTime;
@@ -52,7 +97,7 @@ public class PlayerController : MonoBehaviour
     void LaunchOrb()
     {
         GameObject myOrb;
-        myOrb = Instantiate(orb, player.transform.position + player.transform.forward + player.transform.right*2, Quaternion.identity, orbs.transform);
+        myOrb = Instantiate(orbInHand, player.transform.position + player.transform.forward + player.transform.right*2, Quaternion.identity, orbs.transform);
         myOrb.GetComponent<Rigidbody>().AddForce(Kamera * launchForce * timePressedKey* CoeffPuissanceTemps);
     }
 }

@@ -18,9 +18,12 @@ public class PlayerController : MonoBehaviour
     public int launchForce;
     public float timePressedKey;
     public bool launchObject;
-    public int maxForceLancer;
-    public int CoeffPuissanceTemps;
-	new Vector3 ballista; 
+    public float maxForceLancer;  
+    public int radiusAngle;
+
+
+
+
 
 
     void Start()
@@ -30,15 +33,17 @@ public class PlayerController : MonoBehaviour
         orbs = GameObject.Find("Orbs");
         KameraMain = Camera.main;
         timePressedKey = 0;
+        launchForce = 500;
         launchObject = false;
-        maxForceLancer = 200;
-        CoeffPuissanceTemps = 15;
-		orbInHand = orb; 
-    }
+        maxForceLancer = 1.5f ;
+        radiusAngle = 45;
+		orbInHand = orb;
+       }
 
     void Update()
     {
-		if(Input.GetKey(KeyCode.Alpha1)){
+
+        if (Input.GetKey(KeyCode.Alpha1)){
 			if(orbInHand != orb){
 
 				orbInHand = orb;
@@ -81,7 +86,7 @@ public class PlayerController : MonoBehaviour
             timePressedKey += Time.deltaTime;
             if(timePressedKey > maxForceLancer)
             {
-                timePressedKey = 200;
+                timePressedKey = 1.5f;
             }
         }
         else if (launchObject)
@@ -96,8 +101,20 @@ public class PlayerController : MonoBehaviour
 
     void LaunchOrb()
     {
-        GameObject myOrb;
-        myOrb = Instantiate(orbInHand, player.transform.position + player.transform.forward + player.transform.right*2, Quaternion.identity, orbs.transform);
-        myOrb.GetComponent<Rigidbody>().AddForce(Kamera * launchForce * timePressedKey* CoeffPuissanceTemps);
+        GameObject myOrb;           
+        myOrb = Instantiate(orbInHand, player.transform.position + player.transform.forward + player.transform.right, Quaternion.identity, orbs.transform);
+        Vector3 dir = KameraMain.transform.forward; //recup la direction de la camera
+        float h = dir.y; // récup la valeur de l'axe vertical
+        float dist = dir.magnitude; // direction horizontal 
+        float a = radiusAngle * Mathf.Deg2Rad; //Convertir angle en radian
+        dir.y = dist * Mathf.Tan(a); // donne la direction pou l'angle d'élévation
+        dist += h / Mathf.Tan(a); //corrige les petites diff de hauteur
+        // Calcul la vélocité à appliquer à la magnitude
+        float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
+        Vector3 finish = vel * dir.normalized;
+        Debug.Log(finish);
+        var velocityOrb = myOrb.GetComponent<Rigidbody>().velocity = finish;        
+        myOrb.GetComponent<Rigidbody>().AddForce((velocityOrb * timePressedKey) * launchForce/5);
+        Debug.Log((velocityOrb * timePressedKey) * launchForce/5);
     }
 }

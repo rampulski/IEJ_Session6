@@ -2,55 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Orbs : MonoBehaviour {
+public class Orbs : MonoBehaviour
+{
 
 
-	public GameObject Sphere;
-	public Light sphereLight;
-    Collider OrbCollision;
-   
+    public GameObject Sphere;
+    public Light sphereLight;
+
     public float timeBeforeDestruction;
 
-	void Start () {
-		
+    void Start()
+    {
 
-		sphereLight = GetComponent<Light> ();
-        sphereLight.intensity.Equals(5); 
-        OrbCollision = gameObject.GetComponent(typeof(SphereCollider)) as Collider;
+        StartCoroutine("dontKillNow");
+        sphereLight = GetComponent<Light>();
+
 
 
     }
-	IEnumerator dontKillNow(){
+    IEnumerator dontKillNow()
+    {
 
-		yield return new WaitForSeconds (10);
+        yield return new WaitForSeconds(6);
+        Destruction();
 
 
 
-	}
+    }
 
-    private void OnCollisionEnter(Collision OrbCollision)
+    private void OnCollisionEnter(Collision collision)
+    {
+        sphereLight.range += 0.75f;
+        sphereLight.intensity -= 0.25f;
+        Debug.Log(sphereLight.intensity);
+    }
+    void Update()
     {
        
-            sphereLight.intensity -= 1.25f;
-           Debug.Log(sphereLight.intensity);
-        
-    }
-
-    void Update() {
-        Invoke(("Destruction"), timeBeforeDestruction);
-        StartCoroutine("dontKillNow");
-        
-            
-        
     }
 
     void Destruction()
-    {
-		if (sphereLight.intensity != 0) {
-			sphereLight.intensity -= 0.25f; 
-		} else {
+    {        
 
-			Destroy (gameObject);
-		}
+            Destroy(gameObject);
+        
     }
 }

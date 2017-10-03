@@ -14,8 +14,10 @@ public class Orbs : MonoBehaviour
     public float sphereRange;
     public Material sphereMat;
     public Renderer sphereRenderer;
-    public Renderer sphereRendererChildren;
-    public Color sphereColor;
+    public float localScaleDim;
+    public float localScale;
+
+
 
 
     void Start()
@@ -25,7 +27,7 @@ public class Orbs : MonoBehaviour
         sphereRenderer = GetComponent<Renderer>();     
         sphereFadeIn = (sphereLight.intensity / timeBeforeDestruction);
         /*StartCoroutine("dontKillmeNowPls");*/
-        //sphereColor = sphereRenderer.material.color  = Color.white;
+      
 
     }
 
@@ -40,10 +42,18 @@ public class Orbs : MonoBehaviour
         float FpsParsec = (1 / Time.deltaTime);
 
         if (sphereLight.intensity != 0 || sphereLight.intensity > 0)
-        {                        
-            //sphereRenderer.material.SetColor("_EmissionColor", Color.Lerp(Color.white, Color.black, Time.time / timeBeforeDestruction));
+        {
             sphereLight.range = sphereLight.range - sphereFadeIn / FpsParsec;
-            sphereLight.intensity = sphereLight.intensity - sphereFadeIn / FpsParsec;       
+            sphereLight.intensity = sphereLight.intensity - sphereFadeIn / FpsParsec;
+            localScale = transform.localScale.x / 6f;
+            localScaleDim = (((sphereFadeIn / FpsParsec)*(timeBeforeDestruction-1) * localScale)*10);
+            if (sphereLight.intensity <= 1)
+            {
+                if (transform.localScale.x > 0)
+                {
+                    transform.localScale -= new Vector3(localScaleDim, localScaleDim, localScaleDim);
+                }
+            }
         }
         else
         {

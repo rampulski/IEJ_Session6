@@ -21,14 +21,17 @@ ModelImporter:
     2300002: Box002_MeshPart1
     2300004: Box002_MeshPart2
     2300006: Box002_MeshPart3
+    2300008: Box002
     3300000: Box002_MeshPart0
     3300002: Box002_MeshPart1
     3300004: Box002_MeshPart2
     3300006: Box002_MeshPart3
+    3300008: Box002
     4300000: Box002_MeshPart0
     4300002: Box002_MeshPart1
     4300004: Box002_MeshPart2
     4300006: Box002_MeshPart3
+    4300008: Box002
   materials:
     importMaterials: 1
     materialName: 0

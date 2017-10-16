@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: e58f6bffa44b6fa47b607d0bc0d219e6
+timeCreated: 1507553013
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box005
+    100004: Box007
+    100006: Box008
+    100008: Box009
+    100010: Box010
+    100012: Box011
+    100014: Box013
+    100016: Box014
+    100018: 'cross '
+    100020: Door
+    100022: //RootNode
+    100024: 'Pylone 1 '
+    100026: Pylone 2
+    100028: Pylone 3
+    100030: Pylone 4
+    100032: Pylone 5
+    100034: Pylone 6
+    100036: Toit
+    100038: Torus001
+    100040: Torus002
+    100042: Torus003
+    100044: Torus004
+    100046: Torus005
+    100048: Torus006
+    100050: Torus007
+    100052: Torus008
+    100054: Torus009
+    100056: Torus010
+    100058: Torus011
+    100060: Torus012
+    400000: Box001
+    400002: Box005
+    400004: Box007
+    400006: Box008
+    400008: Box009
+    400010: Box010
+    400012: Box011
+    400014: Box013
+    400016: Box014
+    400018: 'cross '
+    400020: Door
+    400022: //RootNode
+    400024: 'Pylone 1 '
+    400026: Pylone 2
+    400028: Pylone 3
+    400030: Pylone 4
+    400032: Pylone 5
+    400034: Pylone 6
+    400036: Toit
+    400038: Torus001
+    400040: Torus002
+    400042: Torus003
+    400044: Torus004
+    400046: Torus005
+    400048: Torus006
+    400050: Torus007
+    400052: Torus008
+    400054: Torus009
+    400056: Torus010
+    400058: Torus011
+    400060: Torus012
+    2300000: Box001
+    2300002: Box005
+    2300004: Box007
+    2300006: Box008
+    2300008: Box009
+    2300010: Box010
+    2300012: Box011
+    2300014: Box013
+    2300016: Box014
+    2300018: 'cross '
+    2300020: Door
+    2300022: 'Pylone 1 '
+    2300024: Pylone 2
+    2300026: Pylone 3
+    2300028: Pylone 4
+    2300030: Pylone 5
+    2300032: Pylone 6
+    2300034: Toit
+    2300036: Torus001
+    2300038: Torus002
+    2300040: Torus003
+    2300042: Torus004
+    2300044: Torus005
+    2300046: Torus006
+    2300048: Torus007
+    2300050: Torus008
+    2300052: Torus009
+    2300054: Torus010
+    2300056: Torus011
+    2300058: Torus012
+    3300000: Box001
+    3300002: Box005
+    3300004: Box007
+    3300006: Box008
+    3300008: Box009
+    3300010: Box010
+    3300012: Box011
+    3300014: Box013
+    3300016: Box014
+    3300018: 'cross '
+    3300020: Door
+    3300022: 'Pylone 1 '
+    3300024: Pylone 2
+    3300026: Pylone 3
+    3300028: Pylone 4
+    3300030: Pylone 5
+    3300032: Pylone 6
+    3300034: Toit
+    3300036: Torus001
+    3300038: Torus002
+    3300040: Torus003
+    3300042: Torus004
+    3300044: Torus005
+    3300046: Torus006
+    3300048: Torus007
+    3300050: Torus008
+    3300052: Torus009
+    3300054: Torus010
+    3300056: Torus011
+    3300058: Torus012
+    4300000: Door
+    4300002: 'cross '
+    4300004: Box013
+    4300006: Box014
+    4300008: Box001
+    4300010: Toit
+    4300012: Pylone 3
+    4300014: Box009
+    4300016: Torus007
+    4300018: Torus002
+    4300020: Pylone 6
+    4300022: Box007
+    4300024: Torus008
+    4300026: Torus006
+    4300028: 'Pylone 1 '
+    4300030: Box005
+    4300032: Torus010
+    4300034: Torus004
+    4300036: Pylone 2
+    4300038: Box008
+    4300040: Torus011
+    4300042: Torus003
+    4300044: Pylone 5
+    4300046: Box011
+    4300048: Torus012
+    4300050: Torus005
+    4300052: Pylone 4
+    4300054: Box010
+    4300056: Torus001
+    4300058: Torus009
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

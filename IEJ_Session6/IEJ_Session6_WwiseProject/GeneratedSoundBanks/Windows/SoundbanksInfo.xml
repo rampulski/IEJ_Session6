@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\IEJ2017\SourceTree\IEJ_Session6\IEJ_Session6_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\IEJ2017\SourceTree\IEJ_Session6\IEJ_Session6_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\IEJ2017\SourceTree\IEJ_Session6\IEJ_Session6_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\IEJ2017\SourceTree\IEJ_Session6\IEJ_Session6_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MAIN</ObjectPath>
+			<ShortName>MAIN</ShortName>
+			<Path>MAIN.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="16260695" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="24771019" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="28918651" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="63765746" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="86662979" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="90099874" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood07.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood07_1C9C67B2.wem</Path>
+				</File>
+				<File Id="134798064" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="144476791" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves05.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="165672068" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="188506327" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel05.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="218385710" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood06.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="222945900" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete06.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="249352400" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood08.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood08_1C9C67B2.wem</Path>
+				</File>
+				<File Id="301789793" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="345760319" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="346284943" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete05.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="360292519" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="410811655" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="415367538" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="475640024" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves07.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves07_1C9C67B2.wem</Path>
+				</File>
+				<File Id="602017751" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="619226681" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="741765980" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="751217572" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete08.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete08_1C9C67B2.wem</Path>
+				</File>
+				<File Id="755850160" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\toe\footstep_boy_ground_toe04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="782480821" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="785585873" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel06.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="788641164" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="827416905" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete07.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete07_1C9C67B2.wem</Path>
+				</File>
+				<File Id="844457062" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="859732289" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves06.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="867841766" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="871757656" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\heel\footstep_run_ground_heel01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="907142640" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="922203052" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel03.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="936520320" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="956519276" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\run\toe\footstep_run_ground_toe04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="979047187" Language="SFX">
+					<ShortName>Character\Footsteps\Grass\walk\footstep_walk_leaves08.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Grass\walk\footstep_walk_leaves08_1C9C67B2.wem</Path>
+				</File>
+				<File Id="995315294" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel01.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1027354154" Language="SFX">
+					<ShortName>Character\Footsteps\Wood\walk\footstep_walk_wood05.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Wood\walk\footstep_walk_wood05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1029351763" Language="SFX">
+					<ShortName>Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel02.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Dirt\walk\heel\footstep_boy_ground_heel02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1035209845" Language="SFX">
+					<ShortName>Character\Footsteps\Rock\walk\footstep_walk_concrete04.wav</ShortName>
+					<Path>SFX\Character\Footsteps\Rock\walk\footstep_walk_concrete04_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

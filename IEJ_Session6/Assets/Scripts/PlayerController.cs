@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
         // Calcul la vélocité à appliquer à la magnitude
         float vel = Mathf.Sqrt(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a));
         Vector3 finish = vel * dir.normalized;
-        Debug.Log(finish);
+        //Debug.Log(finish);
         var velocityOrb = myOrb.GetComponent<Rigidbody>().velocity = finish;        
         myOrb.GetComponent<Rigidbody>().AddForce((velocityOrb * timePressedKey) * launchForce/5);
         //Debug.Log((velocityOrb * timePressedKey) * launchForce/5);

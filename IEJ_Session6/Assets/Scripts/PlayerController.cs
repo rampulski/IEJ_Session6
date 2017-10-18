@@ -115,6 +115,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log(finish);
         var velocityOrb = myOrb.GetComponent<Rigidbody>().velocity = finish;        
         myOrb.GetComponent<Rigidbody>().AddForce((velocityOrb * timePressedKey) * launchForce/5);
-        Debug.Log((velocityOrb * timePressedKey) * launchForce/5);
+        //Debug.Log((velocityOrb * timePressedKey) * launchForce/5);
     }
 }

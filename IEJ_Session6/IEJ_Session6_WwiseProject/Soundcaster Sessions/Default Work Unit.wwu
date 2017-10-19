@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0A432E91-79CC-44C0-97DB-DAC149A88F72}" SchemaVersion="80">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{0A432E91-79CC-44C0-97DB-DAC149A88F72}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="MainUnityProject" ID="{3BA17518-53AC-40C6-A5B9-5C344B19F6A6}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Dirt" ID="{68A1C203-0392-4AB8-AB40-1C6886ABC50D}"/>
+						<CurrentSwitchRef Name="run" ID="{4903BD63-88F7-4872-8768-DCA6BDDF7186}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

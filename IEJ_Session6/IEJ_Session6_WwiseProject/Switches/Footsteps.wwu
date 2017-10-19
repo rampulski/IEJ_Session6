@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99CDAE34-421C-44BA-B7AF-FB0CDB69F885}" SchemaVersion="80">
+	<Switches>
+		<WorkUnit Name="Footsteps" ID="{99CDAE34-421C-44BA-B7AF-FB0CDB69F885}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Type" ID="{420BED24-DB51-4993-8AE4-74443463824E}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="run" ID="{4903BD63-88F7-4872-8768-DCA6BDDF7186}"/>
+						<Switch Name="walk" ID="{5D4B6DC8-14E6-4B4A-B2A4-502519B9DE82}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Surface" ID="{4E4A9481-C133-456A-A6FB-1DBE76C2CB4C}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{68A1C203-0392-4AB8-AB40-1C6886ABC50D}"/>
+						<Switch Name="Grass" ID="{D4C0602F-B388-40E4-8713-23CCBD2DBC7E}"/>
+						<Switch Name="Wood" ID="{EF22A25A-D413-4E09-93EB-18F7EDD6CA19}"/>
+						<Switch Name="Rock" ID="{928D77D1-DEB2-4A20-B42D-BC4005B5075B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

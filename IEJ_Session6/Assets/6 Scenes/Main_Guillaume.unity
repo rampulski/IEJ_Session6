@@ -17973,7 +17973,8 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &828834275 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+  m_PrefabParentObject: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f,
+    type: 2}
   m_PrefabInternal: {fileID: 1957456878}
 --- !u!1 &829807383 stripped
 GameObject:
@@ -42625,52 +42626,44 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2144701692}
     m_Modifications:
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 28.86
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalPosition.y
       value: 17.76
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalPosition.z
       value: -1.5499998
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0.036932647
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0.01788826
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0.00055005855
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.9991575
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+    - target: {fileID: 4572121958314974, guid: e512fa04c0423664a963b0a13345449f, type: 2}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.234
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.052
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.013
+    - target: {fileID: 1996408533159830, guid: e512fa04c0423664a963b0a13345449f, type: 2}
+      propertyPath: m_Name
+      value: WaterProNighttime
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: e512fa04c0423664a963b0a13345449f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1957774860 stripped
 GameObject:

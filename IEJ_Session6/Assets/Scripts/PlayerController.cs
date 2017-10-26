@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
             */
 
 
-            if (Input.GetKey(KeyCode.RightShift))
+		if (Input.GetButton("Fire1"))
         {
             launchObject = true;
             timePressedKey += Time.deltaTime;

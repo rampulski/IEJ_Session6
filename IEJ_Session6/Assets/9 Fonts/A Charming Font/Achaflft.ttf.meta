@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2f3661420bac06040be16c548d55c242
+timeCreated: 1509091915
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: A Charming Font Leftleaning
+  fontNames:
+  - A Charming Font Leftleaning
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

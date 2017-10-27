@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1c640556f604ea64b906ed4856caf057
+timeCreated: 1509091915
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: A Charming Font Italic
+  fontNames:
+  - A Charming Font Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

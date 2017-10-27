@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 39e92d902b5835d488494bcd03c66d8c
+timeCreated: 1509091915
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: A Charming Font Expanded
+  fontNames:
+  - A Charming Font Expanded
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

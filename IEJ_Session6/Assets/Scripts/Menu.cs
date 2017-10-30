@@ -12,10 +12,11 @@ public class Menu : MonoBehaviour {
 	}
 	
 	void Update () {
+    // Jouer la premi�re animation en boucle
     if (Input.GetButtonDown("Fire1"))
     {
-            Debug.Log("animation � placer"); // Faire dispara�tre le titre et lancer l'animation
-        SceneManager.LoadScene("Main_Alex"); // Remplacer Main_Alex par Main
+        // Jouer la deuxi�me animation une fois
+        SceneManager.LoadSceneAsync("Main_Alex"); // Remplacer Main_Alex par Main
     }
 	}
 }

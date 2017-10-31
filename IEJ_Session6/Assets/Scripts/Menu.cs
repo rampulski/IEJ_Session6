@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
-	void Start () {
+	void Start ()
+    {
       
-       
-        
 	}
 	
-	void Update () {
-    // Jouer la premi�re animation en boucle
-    if (Input.GetButtonDown("Fire1"))
+	void Update ()
     {
+    // Jouer la premi�re animation en boucle
+        if (Input.GetButtonDown("Fire1"))
+        {
         // Jouer la deuxi�me animation une fois
-        SceneManager.LoadSceneAsync("Main_Alex"); // Remplacer Main_Alex par Main
+        SceneManager.LoadSceneAsync("Main_Guillaume"); // Il faut remplacer par "Main"
+        }
     }
-	}
 }

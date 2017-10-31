@@ -6,8 +6,9 @@ public class LightCollider : MonoBehaviour {
     
         public Light Lampe;
         public Renderer rend;
-        public AudioSource Source;
-        public AudioClip hitOrb;
+        AudioSource audiosource;
+        
+
     void Start() {
 
         
@@ -20,24 +21,31 @@ public class LightCollider : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider Orbs) // Teste la collision 
     {
-         
-        StartCoroutine("DontKillMe");
-        Source.PlayOneShot(hitOrb, 1F);
+        if (Orbs)
+        {
+            Lampe.intensity = 1.5f;
+            AkSoundEngine.PostEvent("LampadaireON", gameObject);
+            rend.material.SetColor("_MainColor", Color.white);
 
+        }
 
 
     }
 
-    IEnumerator DontKillMe()
+   /* IEnumerator DontKillMe()
     {
        
        Lampe.intensity = 1.5f;
         rend.material.SetColor("_MainColor", Color.white);
+        AkSoundEngine.PostEvent("LampadaireBurning", gameObject);
+
         yield return new WaitForSeconds(10f);
         Lampe.intensity = 0f;
         rend.material.SetColor("_MainColor", Color.black);
+        AkSoundEngine.PostEvent("LampadaireOFF", gameObject);
 
-    }
+
+    }*/
 
 
 

@@ -8,13 +8,17 @@ public class Quit_Game : MonoBehaviour {
     public bool canQuit;
     private bool quitting;
     public float speed;
+    public AnimationScript animationScript;
 
-	void Start () {
-		
-	}
-	
-	void Update ()
+    void Start () {
+        animationScript = GameObject.FindObjectOfType<AnimationScript>();
+        canQuit = animationScript.canQuite;
+    }
+
+    void Update ()
     {
+        canQuit = animationScript.canQuite;
+ 
         if (Input.GetButton("Fire2") && canQuit == true)
         {
             quitting = true;
@@ -30,7 +34,6 @@ public class Quit_Game : MonoBehaviour {
         }
         if (reset.fillAmount > 0.95)
         {
-            Debug.Log("game over");
             Application.Quit();
         }
 

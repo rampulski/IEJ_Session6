@@ -31,7 +31,7 @@ public class Reset : MonoBehaviour {
         }
         if (reset.fillAmount > 0.95)
             {
-                SceneManager.LoadSceneAsync("Menu");
+                SceneManager.LoadScene("Menu");
             }
 
         if (resetting == false)

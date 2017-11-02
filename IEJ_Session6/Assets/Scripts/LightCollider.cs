@@ -32,24 +32,7 @@ public class LightCollider : MonoBehaviour {
 
     }
 
-   /* IEnumerator DontKillMe()
-    {
-       
-       Lampe.intensity = 1.5f;
-        rend.material.SetColor("_MainColor", Color.white);
-        AkSoundEngine.PostEvent("LampadaireBurning", gameObject);
-
-        yield return new WaitForSeconds(10f);
-        Lampe.intensity = 0f;
-        rend.material.SetColor("_MainColor", Color.black);
-        AkSoundEngine.PostEvent("LampadaireOFF", gameObject);
-
-
-    }*/
-
-
-
-
+  
 }
         
         

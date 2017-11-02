@@ -16,7 +16,7 @@ public class Menu : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
         // Jouer la deuxi�me animation une fois
-        SceneManager.LoadSceneAsync("Main_Guillaume"); // Il faut remplacer par "Main"
+        SceneManager.LoadSceneAsync("Main"); // Il faut remplacer par "Main"
         }
     }
 }

@@ -5,9 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public GameObject orb;
 	public GameObject orbHeavy;
-	public GameObject orbLite;
 	public GameObject orbBounce;
     public GameObject orbSticky;
 
@@ -28,7 +26,9 @@ public class PlayerController : MonoBehaviour
     public float palier2;
     public float palier3;
     public float powerTimePressed;
-
+	public float stickyForce;
+	public float BouncyForce;
+	public float HeavyForce;
 
     void Start()
     {		
@@ -40,8 +40,7 @@ public class PlayerController : MonoBehaviour
         launchObject = false;
         maxForceLancer = 3.8f;
         powerTimePressed = 0;
-        radiusAngle = 35;
-		orbInHand = orb;
+        radiusAngle = 23;
         HEWALKING = 1f;
         palier1 = 0.8f;
         palier2 = 1.8f;
@@ -61,63 +60,25 @@ public class PlayerController : MonoBehaviour
 
         if(timePressedKey <= palier1)
         {
-            orbInHand = orbHeavy;
-            powerTimePressed = timePressedKey * HEWALKING;
+			orbInHand = orbSticky;
+            powerTimePressed = timePressedKey * HEWALKING * stickyForce;
         }
         else if (timePressedKey <= palier2)
         {
-            orbInHand = orbSticky;
-            powerTimePressed = (timePressedKey - palier1) * HEWALKING;
+			orbInHand = orbBounce;
+			powerTimePressed = (timePressedKey - palier1) * HEWALKING * BouncyForce;
 
         }
         else if (timePressedKey <= palier3)
         {
-            orbInHand = orbBounce;
-            powerTimePressed = (timePressedKey - palier2) * HEWALKING;
+			orbInHand = orbHeavy;
+			powerTimePressed = (timePressedKey - palier2) * HEWALKING * HeavyForce;
 
         }else if (timePressedKey > palier3)
         {
-            orbInHand = orbBounce;
-            powerTimePressed = (maxForceLancer - palier3) * HEWALKING; 
+			orbInHand = orbHeavy;
+			powerTimePressed = (maxForceLancer - palier3) * HEWALKING * HeavyForce; 
         }
-
-
-            /*
-            if (Input.GetKey(KeyCode.Alpha1)){
-                if(orbInHand != orb){
-
-                    orbInHand = orb;
-                } 
-
-
-            }
-            if(Input.GetKey(KeyCode.Alpha2)){
-                if(orbInHand != orbHeavy){
-
-                    orbInHand = orbHeavy;
-
-                } 
-
-            }
-            if(Input.GetKey(KeyCode.Alpha3)){
-                if(orbInHand != orbLite){
-
-                    orbInHand = orbLite;
-
-                } 
-
-            }
-
-            if(Input.GetKey(KeyCode.Alpha4)){
-                if(orbInHand != orbBounce){
-
-                    orbInHand = orbBounce;
-
-                } 
-
-            }
-
-            */
 
 
 		if (Input.GetButton("Fire1"))
@@ -147,7 +108,7 @@ public class PlayerController : MonoBehaviour
         Vector3 vect = KameraMain.transform.forward; //recup la direction de la camera
         AddCourb(vect);
         var velocityOrb = myOrb.GetComponent<Rigidbody>().velocity = finish;
-        myOrb.GetComponent<Rigidbody>().AddForce((velocityOrb *  powerTimePressed) * launchForce); //Rajoute HEWALKING = Vitesse deplacement player
+		myOrb.GetComponent<Rigidbody>().AddForce((velocityOrb * powerTimePressed) * launchForce); //Rajoute HEWALKING = Vitesse deplacement player
 
     }
 

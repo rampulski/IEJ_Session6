@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Quit_Game : MonoBehaviour {
     public Image reset;
     public bool canQuit;
@@ -35,6 +36,7 @@ public class Quit_Game : MonoBehaviour {
         if (reset.fillAmount > 0.95)
         {
             Application.Quit();
+
         }
 
         if (quitting == false)

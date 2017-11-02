@@ -66,7 +66,7 @@ public class AnimationScript : MonoBehaviour {
 
              void LaunchScene()
             {
-                    SceneManager.LoadSceneAsync("Main"); // Il faut remplacer par "Main"
+                    SceneManager.LoadScene("Main"); // Il faut remplacer par "Main"
                     launchScene = false;
             }
     

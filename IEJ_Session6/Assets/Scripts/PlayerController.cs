@@ -83,9 +83,14 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetButton("Fire1"))
         {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                AkSoundEngine.PostEvent("Charge", gameObject);
+            }
             launchObject = true;
             timePressedKey += Time.deltaTime;
 
+           
             if (timePressedKey > maxForceLancer)
             {
                 timePressedKey = 3.75f;
@@ -93,6 +98,10 @@ public class PlayerController : MonoBehaviour
         }
         else if (launchObject)
         {
+            if (Input.GetButtonUp("Fire1"))
+            {
+                AkSoundEngine.PostEvent("ChargeOFF", gameObject);
+            }
             LaunchOrb();
             timePressedKey = 0;
             launchObject = false; 
@@ -103,6 +112,7 @@ public class PlayerController : MonoBehaviour
 
     void LaunchOrb()
     {
+        AkSoundEngine.PostEvent("OrbBirth", gameObject);
         GameObject myOrb;
         myOrb = Instantiate(orbInHand, player.transform.position + player.transform.forward + player.transform.right, Quaternion.identity, orbs.transform);
         Vector3 vect = KameraMain.transform.forward; //recup la direction de la camera

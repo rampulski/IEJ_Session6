@@ -19,6 +19,7 @@ public class OrbsDestruction : MonoBehaviour
 	public float timeFadeOut;
 	private bool fadeStart;
 	public float deathSoundDuration;
+    private bool CanPlaySound = true;
 
     void Start()
     {
@@ -39,11 +40,19 @@ public class OrbsDestruction : MonoBehaviour
 			fadeStart = true;
 		}
 		if (timer > timeAlive - deathSoundDuration) 
-		{
-			Destruction ();
+            {
+            if (CanPlaySound)
+            {
+                AkSoundEngine.PostEvent("OrbDeath", gameObject);
+                CanPlaySound = false;
+            }
+            
 		}
-			
-		if (fadeStart) {
+        if (timer > timeAlive )
+        {
+            Destruction();
+        }
+        if (fadeStart) {
 			
 			timerFadeOut += Time.deltaTime;
 			sphereLight.intensity = Mathf.Lerp(sphereLight.intensity, 0f, timerFadeOut / timeFadeOut );
@@ -54,7 +63,6 @@ public class OrbsDestruction : MonoBehaviour
 
 	void Destruction()
 	{
-		Debug.Log ("Play Destruction Sound");
-		Destroy(gameObject);
+        Destroy(gameObject);
 	}
 }
